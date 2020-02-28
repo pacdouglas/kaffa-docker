@@ -142,8 +142,8 @@ RUN echo "Copying Java Windows Includes"
 COPY java-win-includes /opt/java-win-includes/
 ENV JAVA_WIN_INCLUDES /opt/java-win-includes/
 
-RUN echo "Install node 8 / npm / yarn" \
-    && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+RUN echo "Install node 13 / npm / yarn" \
+    && curl -sL https://deb.nodesource.com/setup_13.x | bash - \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
     && apt-get update -qq && apt-get install -qq --no-install-recommends nodejs yarn \
