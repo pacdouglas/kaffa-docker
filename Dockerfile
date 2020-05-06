@@ -82,6 +82,7 @@ RUN echo "Install Android SDK Versions" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;28.0.1" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;28.0.2" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;28.0.3" \
+        && yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;29.0.2" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "platform-tools" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-19" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-20" \
@@ -93,6 +94,7 @@ RUN echo "Install Android SDK Versions" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-26" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-27" \
         && yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-28" \
+        && yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-29" \
         && echo "Android SDK finishing"
 
 ARG ANDROID_NDK_SHA=ba85dbe4d370e4de567222f73a3e034d85fc3011b3cbd90697f3e8dcace3ad94
