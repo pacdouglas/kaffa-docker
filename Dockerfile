@@ -151,9 +151,6 @@ RUN echo "Install node 12 / npm / yarn" \
     && apt-get update -qq && apt-get install -qq --no-install-recommends nodejs yarn \
     && rm -rf /var/lib/apt/lists/*
 
-RUN echo "Install zip" \
-    && apt-get -y install zip
-
 RUN apt-get -y autoremove \
     && apt-get -y autoclean \
     && apt-get -y clean all
