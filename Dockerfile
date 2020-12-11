@@ -130,7 +130,8 @@ RUN echo "Install native dependencies" \
     && dpkg --add-architecture i386 \
     && apt-get update \
     && apt-get -y install zlib1g:i386 \
-    && apt-get -y install zlib1g-dev:i386
+    && apt-get -y install zlib1g-dev:i386 \
+    && apt-get -y install libncurses5
 
 RUN echo "Install Wine" \
     && apt-get -y install --install-recommends wine-development
